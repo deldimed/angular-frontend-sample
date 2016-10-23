@@ -11,7 +11,7 @@ function addBookController (bookService, $state) {
     }
 
     return bookService.add(ctrl.book)
-      .then(book => $state.go("book.detail", { id: book.id }))
+      .then(book => $state.go("books.detail", { id: book.id }))
       .catch(error => ctrl.error = error)
     ;
   }
