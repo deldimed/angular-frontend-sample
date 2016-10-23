@@ -1,10 +1,13 @@
 "use strict";
 
 const angular = require("angular");
-const app = angular.module("app", []);
+const app = angular.module("app", [
+  require("angular-messages")
+]);
 
 // Components
 app.component("appHome", require("./components/home"));
+app.component("appAddingBook", require("./components/adding-book"));
 app.component("appBookList", require("./components/book-list"));
 
 // Constants
