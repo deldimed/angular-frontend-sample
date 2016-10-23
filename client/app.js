@@ -11,6 +11,7 @@ app.component("appHome", require("./components/home"));
 app.component("appNav", require("./components/nav"));
 app.component("appAddBook", require("./components/add-book"));
 app.component("appBookList", require("./components/book-list"));
+app.component("appBookDetail", require("./components/book-detail"));
 
 // Configuration
 app.config(require("./app.routes"));

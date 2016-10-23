@@ -1,0 +1,13 @@
+<h2>Book detail</h2>
+
+<dl ng-if="$ctrl.book">
+  <dt>Title</dt>
+  <dd>{{$ctrl.book.title}}</dd>
+  
+  <dt>Author</dt>
+  <dd>{{$ctrl.book.author}}</dd>
+</dl>
+
+<div ng-if="$ctrl.error">
+  {{$ctrl.error}}
+</div>
