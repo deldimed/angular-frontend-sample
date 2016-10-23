@@ -2,6 +2,9 @@
   "name": "angular-frontend-sample",
   "version": "1.0.0",
   "description": "A sample on how to build an angular frontend",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fvilers/angular-frontend-sample.git"
@@ -15,5 +18,8 @@
   "homepage": "https://github.com/fvilers/angular-frontend-sample#readme",
   "devDependencies": {
     "eslint": "3.8.1"
+  },
+  "dependencies": {
+    "express": "4.14.0"
   }
 }
