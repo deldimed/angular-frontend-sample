@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/fvilers/angular-frontend-sample/issues"
   },
-  "homepage": "https://github.com/fvilers/angular-frontend-sample#readme"
+  "homepage": "https://github.com/fvilers/angular-frontend-sample#readme",
+  "devDependencies": {
+    "eslint": "3.8.1"
+  }
 }
