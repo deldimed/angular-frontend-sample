@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A sample on how to build an angular frontend",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "webpack": "webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,12 @@
   },
   "homepage": "https://github.com/fvilers/angular-frontend-sample#readme",
   "devDependencies": {
-    "eslint": "3.8.1"
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-es2015": "6.16.0",
+    "eslint": "3.8.1",
+    "ng-annotate-loader": "0.2.0",
+    "webpack": "1.13.2"
   },
   "dependencies": {
     "compression": "1.6.2",
