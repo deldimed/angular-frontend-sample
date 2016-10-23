@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>angular-frontend-sample</title>
+  <base href="/">
   
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -12,9 +13,10 @@
   <![endif]-->
 </head>
 
-<body>
-  <app-home></app-home>
-  <app-book-list></app-book-list>
+<body ng-cloak>
+  <h1>angular-frontend-sample</h1>
+  <app-nav></app-nav>
+  <ui-view></ui-view>
 
   <script src="bundle/app.min.js"></script>
 </body>
