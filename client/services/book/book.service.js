@@ -2,13 +2,20 @@
 
 function bookService (backendUrl, $http) {
   const service = {
-    list: list
+    list: list,
+    add: add
   };
 
   return service;
 
   function list () {
     return $http.get(`${backendUrl}/books`)
+      .then(response => response.data)
+    ;
+  }
+
+  function add (book) {
+    return $http.post(`${backendUrl}/books`, book)
       .then(response => response.data)
     ;
   }
