@@ -1,6 +1,6 @@
 "use strict";
 
-function addingBookController (bookService) {
+function addBookController (bookService) {
   const ctrl = this;
 
   ctrl.addBook = addBook;
@@ -14,5 +14,5 @@ function addingBookController (bookService) {
 
 module.exports = [
   "bookService",
-  addingBookController
+  addBookController
 ];

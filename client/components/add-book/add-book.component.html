@@ -1,8 +1,8 @@
-<form name="addingBook" novalidate ng-submit="$ctrl.addBook(addingBook.$valid)">
+<form name="addBook" novalidate ng-submit="$ctrl.addBook(addBook.$valid)">
   <div>
     <label for="title">Title</label>
     <input type="text" id="title" name="title" required ng-model="$ctrl.book.title">
-    <div class="text-danger" ng-messages="addingBook.title.$error" ng-show="addingBook.$submitted || addingBook.title.$touched">
+    <div class="text-danger" ng-messages="addBook.title.$error" ng-show="addBook.$submitted || addBook.title.$touched">
       <div ng-message="required">This field is required.</div>
     </div>
   </div>
@@ -10,7 +10,7 @@
   <div>
     <label for="author">Author</label>
     <input type="text" id="author" name="author" required ng-model="$ctrl.book.author">
-    <div class="text-danger" ng-messages="addingBook.author.$error" ng-show="addingBook.$submitted || addingBook.author.$touched">
+    <div class="text-danger" ng-messages="addBook.author.$error" ng-show="addBook.$submitted || addBook.author.$touched">
       <div ng-message="required">This field is required.</div>
     </div>
   </div>

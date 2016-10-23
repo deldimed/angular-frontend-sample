@@ -9,7 +9,7 @@ const app = angular.module("app", [
 // Components
 app.component("appHome", require("./components/home"));
 app.component("appNav", require("./components/nav"));
-app.component("appAddingBook", require("./components/adding-book"));
+app.component("appAddBook", require("./components/add-book"));
 app.component("appBookList", require("./components/book-list"));
 
 // Configuration
