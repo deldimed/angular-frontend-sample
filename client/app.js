@@ -7,4 +7,7 @@ const app = angular.module("app", []);
 app.component("appHome", require("./components/home"));
 app.component("appBookList", require("./components/book-list"));
 
+// Factories
+app.factory("bookService", require("./services/book"));
+
 module.exports = app.name;
