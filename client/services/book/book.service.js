@@ -3,7 +3,8 @@
 function bookService (backendUrl, $http) {
   const service = {
     list: list,
-    add: add
+    add: add,
+    get: get
   };
 
   return service;
@@ -16,6 +17,12 @@ function bookService (backendUrl, $http) {
 
   function add (book) {
     return $http.post(`${backendUrl}/books`, book)
+      .then(response => response.data)
+    ;
+  }
+
+  function get (id) {
+    return $http.get(`${backendUrl}/books/${id}`)
       .then(response => response.data)
     ;
   }
