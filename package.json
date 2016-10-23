@@ -1,0 +1,16 @@
+{
+  "name": "angular-frontend-sample",
+  "version": "1.0.0",
+  "description": "A sample on how to build an angular frontend",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvilers/angular-frontend-sample.git"
+  },
+  "keywords": [],
+  "author": "Fabian Vilers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fvilers/angular-frontend-sample/issues"
+  },
+  "homepage": "https://github.com/fvilers/angular-frontend-sample#readme"
+}
