@@ -1,21 +1,25 @@
+<div class="page-header">
+  <h3>Add a book</h3>
+</div>
+
 <form name="addBook" novalidate ng-submit="$ctrl.addBook(addBook.$valid)">
-  <div>
-    <label for="title">Title</label>
-    <input type="text" id="title" name="title" required ng-model="$ctrl.book.title">
+  <div class="form-group" ng-class="{'has-error': (addBook.$submitted || addBook.title.$touched) && addBook.title.$invalid}">
+    <label for="title" class="control-label">Title</label>
+    <input type="text" id="title" name="title" class="form-control" required ng-model="$ctrl.book.title">
     <div class="text-danger" ng-messages="addBook.title.$error" ng-show="addBook.$submitted || addBook.title.$touched">
       <div ng-message="required">This field is required.</div>
     </div>
   </div>
 
-  <div>
-    <label for="author">Author</label>
-    <input type="text" id="author" name="author" required ng-model="$ctrl.book.author">
+  <div class="form-group" ng-class="{'has-error': (addBook.$submitted || addBook.author.$touched) && addBook.author.$invalid}">
+    <label for="author" class="control-label">Author</label>
+    <input type="text" id="author" name="author" class="form-control" required ng-model="$ctrl.book.author">
     <div class="text-danger" ng-messages="addBook.author.$error" ng-show="addBook.$submitted || addBook.author.$touched">
       <div ng-message="required">This field is required.</div>
     </div>
   </div>
 
   <div>
-    <button type="submit">Add book</button>
+    <button type="submit" class="btn btn-primary">Add a book</button>
   </div>
 </form>
