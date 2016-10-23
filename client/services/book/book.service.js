@@ -1,6 +1,6 @@
 "use strict";
 
-function bookService ($q) {
+function bookService (backendUrl, $http) {
   const service = {
     list: list
   };
@@ -8,11 +8,14 @@ function bookService ($q) {
   return service;
 
   function list () {
-    return $q.when([]);
+    return $http.get(`${backendUrl}/books`)
+      .then(response => response.data)
+    ;
   }
 }
 
 module.exports = [
-  "$q",
+  "backendUrl",
+  "$http",
   bookService
 ];
