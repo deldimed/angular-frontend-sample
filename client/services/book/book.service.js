@@ -5,6 +5,7 @@ function bookService (backendUrl, $http) {
     list: list,
     add: add,
     get: get,
+    update: update,
     remove: remove
   };
 
@@ -24,6 +25,12 @@ function bookService (backendUrl, $http) {
 
   function get (id) {
     return $http.get(`${backendUrl}/books/${id}`)
+      .then(response => response.data)
+    ;
+  }
+
+  function update (id, book) {
+    return $http.put(`${backendUrl}/books/${id}`, book)
       .then(response => response.data)
     ;
   }
