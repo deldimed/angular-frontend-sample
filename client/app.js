@@ -12,6 +12,7 @@ app.component("appNav", require("./components/nav"));
 app.component("appAddBook", require("./components/add-book"));
 app.component("appBookList", require("./components/book-list"));
 app.component("appBookDetail", require("./components/book-detail"));
+app.component("appRemoveBookModal", require("./components/remove-book-modal"));
 
 // Configuration
 app.config(require("./app.routes"));
