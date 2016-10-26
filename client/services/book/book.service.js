@@ -4,7 +4,8 @@ function bookService (backendUrl, $http) {
   const service = {
     list: list,
     add: add,
-    get: get
+    get: get,
+    remove: remove
   };
 
   return service;
@@ -23,6 +24,12 @@ function bookService (backendUrl, $http) {
 
   function get (id) {
     return $http.get(`${backendUrl}/books/${id}`)
+      .then(response => response.data)
+    ;
+  }
+
+  function remove (id) {
+    return $http.delete(`${backendUrl}/books/${id}`)
       .then(response => response.data)
     ;
   }
