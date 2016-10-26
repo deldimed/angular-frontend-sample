@@ -5,7 +5,7 @@ function configureRoutes ($locationProvider, $stateProvider, $urlMatcherFactoryP
 
   $stateProvider
     .state("home", {
-      template: "<app-home></app-home>",
+      redirectTo: "books.list",
       url: "/"
     })
     .state("books", {

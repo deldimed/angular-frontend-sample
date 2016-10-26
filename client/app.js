@@ -9,7 +9,6 @@ const app = angular.module("app", [
 ]);
 
 // Components
-app.component("appHome", require("./components/home"));
 app.component("appNav", require("./components/nav"));
 app.component("appAddBook", require("./components/add-book"));
 app.component("appModifyBook", require("./components/modify-book"));
@@ -26,5 +25,8 @@ app.constant("backendUrl", "http://localhost:3001");
 
 // Factories
 app.factory("bookService", require("./services/book"));
+
+// Run
+app.run(require("./app.route-redirect"));
 
 module.exports = app.name;
