@@ -1,0 +1,15 @@
+<div class="form-group" ng-class="{'has-error': ($ctrl.parentForm.$submitted || $ctrl.parentForm.title.$touched) && $ctrl.parentForm.title.$invalid}">
+  <label for="title" class="control-label">Title</label>
+  <input type="text" id="title" name="title" class="form-control" required ng-model="$ctrl.book.title">
+  <div class="text-danger" ng-messages="$ctrl.parentForm.title.$error" ng-show="$ctrl.parentForm.$submitted || $ctrl.parentForm.title.$touched">
+    <div ng-message="required">This field is required.</div>
+  </div>
+</div>
+
+<div class="form-group" ng-class="{'has-error': ($ctrl.parentForm.$submitted || $ctrl.parentForm.author.$touched) && $ctrl.parentForm.author.$invalid}">
+  <label for="author" class="control-label">Author</label>
+  <input type="text" id="author" name="author" class="form-control" required ng-model="$ctrl.book.author">
+  <div class="text-danger" ng-messages="$ctrl.parentForm.author.$error" ng-show="$ctrl.parentForm.$submitted || $ctrl.parentForm.author.$touched">
+    <div ng-message="required">This field is required.</div>
+  </div>
+</div>
