@@ -8,6 +8,10 @@
   <dd>{{$ctrl.book.author}}</dd>
 </dl>
 
-<div ng-if="$ctrl.error">
+<div ng-if="$ctrl.book && !$ctrl.error">
+  <button type="button" class="btn btn-danger" ng-click="$ctrl.remove()">Remove this book</button>
+</div>
+
+<div class="alert alert-danger" ng-if="$ctrl.error">
   {{$ctrl.error}}
 </div>
