@@ -9,7 +9,8 @@
 </dl>
 
 <div ng-if="$ctrl.book && !$ctrl.error">
-  <button type="button" class="btn btn-danger" ng-click="$ctrl.remove()">Remove this book</button>
+  <a ui-sref="books.update({ id: $ctrl.book.id })" class="btn btn-primary">Modify</a>
+  <button type="button" class="btn btn-danger" ng-click="$ctrl.remove()">Remove</button>
 </div>
 
 <div class="alert alert-danger" ng-if="$ctrl.error">
