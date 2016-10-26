@@ -2,7 +2,9 @@
 
 const angular = require("angular");
 const app = angular.module("app", [
+  require("angular-animate"),
   require("angular-messages"),
+  require("angular-ui-bootstrap"),
   require("angular-ui-router")
 ]);
 
