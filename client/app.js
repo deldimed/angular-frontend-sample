@@ -12,6 +12,7 @@ const app = angular.module("app", [
 app.component("appHome", require("./components/home"));
 app.component("appNav", require("./components/nav"));
 app.component("appAddBook", require("./components/add-book"));
+app.component("appModifyBook", require("./components/modify-book"));
 app.component("appBookList", require("./components/book-list"));
 app.component("appBookDetail", require("./components/book-detail"));
 app.component("appBookEditor", require("./components/book-editor"));

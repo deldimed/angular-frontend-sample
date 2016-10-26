@@ -1,0 +1,15 @@
+<div class="page-header">
+  <h3>Modify a book</h3>
+</div>
+
+<form name="modifyBook" novalidate ng-submit="$ctrl.modifyBook(modifyBook.$valid)">
+  <app-book-editor book="$ctrl.book" ng-if="$ctrl.book"></app-book-editor>
+
+  <div class="alert alert-danger" ng-if="$ctrl.error">
+    {{$ctrl.error}}
+  </div>
+
+  <div ng-if="$ctrl.book">
+    <button type="submit" class="btn btn-primary">Modify the book</button>
+  </div>
+</form>

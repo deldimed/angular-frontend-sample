@@ -25,6 +25,10 @@ function configureRoutes ($locationProvider, $stateProvider, $urlMatcherFactoryP
       template: "<app-book-detail></app-book-detail>",
       url: "/:id"
     })
+    .state("books.update", {
+      template: "<app-modify-book></app-modify-book>",
+      url: "/:id/modify"
+    })
   ;
 
   $urlMatcherFactoryProvider.strictMode(false);
